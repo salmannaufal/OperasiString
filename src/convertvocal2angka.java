@@ -48,4 +48,13 @@ public class convertvocal2angka {
           private static void tampilHasil(String convert) {
         System.out.println("Kalimat Alay Angka : " + convert);
     }
+             public static void main(String[] args) {
+        String identitas = "SALMAN NAUFAL HAQ / XRPL2 / 31";
+        
+        tampilJudul(identitas);
+        String kalimat = tampilInput();
+        String convert = vocal2Angka(kalimat);
+        tampilPerkata(kalimat, convert);
+        tampilHasil(convert);
+    }
 }
